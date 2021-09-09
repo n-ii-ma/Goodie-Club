@@ -1,3 +1,8 @@
 /* font-family: 'Caveat', cursive;
 font-family: 'Merienda', cursive;
 font-family: 'Quicksand', sans-serif; */
+
+/* Universal Styles */
+* {
+    border-radius: 1px;
+}
