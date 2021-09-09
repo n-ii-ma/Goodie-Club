@@ -6,3 +6,14 @@ font-family: 'Quicksand', sans-serif; */
 * {
     border-radius: 1px;
 }
+
+html {
+    font-size: 16px;
+}
+
+html, body {
+    text-align: center;
+    /* background-color: gainsboro; */
+}
+
+/* Header */
