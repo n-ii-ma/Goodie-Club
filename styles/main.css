@@ -5,15 +5,107 @@ font-family: 'Quicksand', sans-serif; */
 /* Universal Styles */
 * {
     border-radius: 1px;
+    box-sizing: border-box;
 }
 
 html {
     font-size: 16px;
 }
 
-html, body {
+body {
+    height: 100vh;
     text-align: center;
-    /* background-color: gainsboro; */
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 2fr 1fr;
+    grid-template-areas: "header" "main" "footer";
+}
+
+/* Header */
+header {
+    background-color: cyan;
+    grid-area: header;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    border-bottom: 1px solid grey;
+    opacity: 0.9;
+/*     position: fixed;
+    top: 0; */
+}
+
+header h1 {
+    font-family: 'Quicksand', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 1.5em;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-family: 'Merienda', cursive;
+    font-weight: 500;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ignore for now */
+main {
+    background-color: violet;
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 3fr 2fr;
+    grid-template-areas: "main-banner" "middle-banner";
+
+}
+
+.main-banner {
+    background-color: red;
+    grid-area: main-banner;
+}
+
+.middle-banner {
+    background-color: salmon;
+    grid-area: middle-banner;
+}
+
+/* .photo1 {
+    background-color: seagreen;
+    grid-area: photo1;
+}
+
+.photo2 {
+    background-color: skyblue;
+    grid-area: photo2;
+}
+
+.photo3 {
+    background-color: springgreen;
+    grid-area: photo3;
+} */
+
+footer {
+    background-color: sienna;
+    grid-area: footer;
 }
 
 /* Header */
