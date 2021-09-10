@@ -58,7 +58,9 @@ nav ul li a {
     body {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 60px 2375px;
-        grid-template-areas: "header" "main";
+        grid-template-areas: 
+        "header header header" 
+        "main main main";
     }
 
     header {
@@ -99,8 +101,10 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 550px 1500px 320px;
-    grid-template-areas: "top-banner" "middle-banner" "bottom-banner";
-
+    grid-template-areas: 
+    "top-banner" 
+    "middle-banner" 
+    "bottom-banner";
 }
 
 .top-banner {
@@ -121,7 +125,54 @@ main {
 
 /* Top Banner for Landscape Mobile Screens */
 @media only screen and (min-width: 320px) and (orientation: landscape) {
+    body {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 60px 2375px;
+        grid-template-areas: 
+        "header header header" 
+        "main main main";
+    }
 
+    main {
+        grid-column: 1 / -1;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 350px 1500px 320px;
+        grid-template-areas: 
+        "top-banner" 
+        "middle-banner" 
+        "bottom-banner";
+    }
+
+    .top-banner {
+        grid-column: 1 / -1;
+        background-image: url('../images/james-sutton-dQ5G0h7sLno-unsplash.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    
+    .top-banner article {
+        border-radius: 2px;
+        background-color: #16ffbd;
+        min-height: 150px;
+        width: 250px;
+        opacity: 0.8;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .top-banner h2 {
+        font-size: 1.75rem;
+        line-height: 1.25em;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /* Top Banner for Tablet Screens */
@@ -145,7 +196,11 @@ main {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 60px 500px 500px 500px;
-    grid-template-areas: "features" "photo1" "photo2" "photo3";
+    grid-template-areas: 
+    "features" 
+    "photo1" 
+    "photo2" 
+    "photo3";
 }
 
 #features {
