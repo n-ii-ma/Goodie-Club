@@ -150,10 +150,10 @@ main {
     
     .top-banner article {
         border-radius: 2px;
-        background-color: #16ffbd;
+        background-color: #182628;
         min-height: 150px;
         width: 250px;
-        opacity: 0.8;
+        opacity: 0.95;
         align-self: center;
         justify-self: center;
         display: flex;
