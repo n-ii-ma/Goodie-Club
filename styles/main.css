@@ -310,6 +310,7 @@ main {
     
     .photo1 figcaption, .photo2 figcaption, .photo3 figcaption  {
         width: 200px;
+        font-size: 1.25rem;
     }
 }
 
