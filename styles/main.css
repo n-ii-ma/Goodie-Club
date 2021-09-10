@@ -18,7 +18,9 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 80px 2375px;
-    grid-template-areas: "header" "main";
+    grid-template-areas: 
+    "header" 
+    "main";
 }
 
 /* Header */
@@ -81,7 +83,27 @@ nav ul li a {
 
 /* Header for Tablet Screens */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
+    body {
+        grid-template-columns: 1fr;
+        grid-template-rows: 110px 2375px;
+        grid-template-areas: 
+        "header" 
+        "main";
+    }
+    
+    header h1 {
+        font-size: 2.5rem;
+    }
+    
+    nav ul {
+        display: inline-flex;
+        margin-top: 1.5em;
+    }
 
+    nav ul li a {
+        font-size: 1.4em;
+        margin: 0 2.5em;
+    }
 }
 
 /* Header for Tablet Landscape Screens */
