@@ -16,7 +16,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 0.24fr 1fr 0.5fr;
+    grid-template-rows: 80px 1000px 75px;
     grid-template-areas: "header" "main" "footer";
 }
 
@@ -78,7 +78,7 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 6fr 2fr;
+    grid-template-rows: 400px 600px;
     grid-template-areas: "top-banner" "middle-banner";
 
 }
@@ -89,6 +89,7 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: -8em;
+    background-position-x: center;
 }
 
 .top-banner h2 {
@@ -117,36 +118,93 @@ main {
 
 /* Top Banner for Desktop Screens */
 @media only screen and (min-width: 1200px) {
-    
+
 }
+
+/* Middle Banner */
+
+.middle-banner {
+    grid-area: middle-banner;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 500px 500px 500px;
+    grid-template-areas: "features" "photo1" "photo2" "photo3";
+}
+
+#features {
+    grid-area: features;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Merienda', cursive;
+    font-size: 1.75rem;
+    color: hotpink;
+}
+
+.photo1 {
+    grid-area: photo1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.photo2 {
+    grid-area: photo2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.photo3 {
+    grid-area: photo3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+.photo1 img {
+    width: 275px;
+    height: 400px;
+    margin-bottom: 0.5em;
+}
+
+.photo2 img {
+    width: 275px;
+    height: 400px;
+    margin-bottom: 0.5em;
+}
+
+.photo3 img {
+    width: 275px;
+    height: 400px;
+    margin-bottom: 0.5em;
+}
+
+.photo1 figcaption, .photo2 figcaption, .photo3 figcaption  {
+    width: 275px;
+    padding-bottom: 0.25em;
+    border-bottom: 1px solid gray;
+    font-family: 'Caveat', cursive;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
 
 
 
 
 /* Ignore for now */
-.middle-banner {
-    background-color: salmon;
-    grid-area: middle-banner;
-}
-
-/* .photo1 {
-    background-color: seagreen;
-    grid-area: photo1;
-}
-
-.photo2 {
-    background-color: skyblue;
-    grid-area: photo2;
-}
-
-.photo3 {
-    background-color: springgreen;
-    grid-area: photo3;
-} */
-
-footer {
+/* footer {
     background-color: sienna;
     grid-area: footer;
-}
-
-/* Header */
+} */
