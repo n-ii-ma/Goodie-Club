@@ -84,12 +84,17 @@ nav ul li a {
 /* Header for Tablet Screens */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     body {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 3fr;
         grid-template-rows: 110px 2375px;
         grid-template-areas: 
-        "header" 
-        "main";
+        "header header" 
+        "sidebar main";
     }
+
+    header {
+        grid-column: 1 / -1;
+    }
+    
     
     header h1 {
         font-size: 2.5rem;
@@ -114,6 +119,39 @@ nav ul li a {
 /* Header for Desktop Screens */
 @media only screen and (min-width: 1200px) {
 
+}
+
+/* Sidebar */
+/* Sidebar for Tablet Screens */
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+    body {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 110px 2375px;
+        grid-template-areas: 
+        "header header" 
+        "sidebar main";
+    }
+
+    .sidebar {
+        grid-area: sidebar;
+        background-color: #fbeec1;
+    }
+
+    .sidebar article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 190px;
+    }
+
+    .sidebar article p {
+        margin: 1.5em 1em;
+        font-family: 'Merienda', cursive;
+        font-size: 1em;
+        line-height: 1.25em;
+    }
 }
 
 /* Top Banner */
@@ -194,7 +232,31 @@ main {
 
 /* Top Banner for Tablet Screens */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
+    body {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 110px 2375px;
+        grid-template-areas: 
+        "header header" 
+        "sidebar main";
+    }
 
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px 1500px 320px;
+        grid-template-areas: 
+        "top-banner" 
+        "middle-banner" 
+        "bottom-banner";
+    }
+    
+    .top-banner {
+        background-position: center;
+    }
+    
+    .top-banner h2 {
+        font-size: 2rem;
+        padding: 0 2em;
+    }
 }
 
 /* Top Banner for Tablet Landscape Screens */
@@ -450,4 +512,5 @@ main {
 /* Footer */
 footer {
     font-family: 'Quicksand', sans-serif;
+    margin-top: 1.5em;
 }
