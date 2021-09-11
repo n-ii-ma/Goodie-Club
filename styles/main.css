@@ -167,7 +167,7 @@ nav ul li a {
 
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 2400px;
+        grid-template-rows: 75px 2210px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -280,7 +280,7 @@ nav ul li a {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 2400px;
+        grid-template-rows: 75px 2210px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -470,7 +470,7 @@ main {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 2400px;
+        grid-template-rows: 75px 2210px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -478,7 +478,7 @@ main {
 
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 800px 850px 700px;
+        grid-template-rows: 800px 675px 700px;
         grid-template-areas: 
         "top-banner" 
         "middle-banner" 
@@ -790,7 +790,7 @@ main {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 2400px;
+        grid-template-rows: 75px 2210px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -798,7 +798,7 @@ main {
 
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 800px 850px 700px;
+        grid-template-rows: 800px 675px 700px;
         grid-template-areas: 
         "top-banner" 
         "middle-banner" 
@@ -812,7 +812,7 @@ main {
 
     .middle-banner {
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 750px;
+        grid-template-rows: 60px 600px;
         grid-template-areas: 
         "features" 
         "figure";
@@ -843,13 +843,13 @@ main {
     }
     
     .photo1 img, .photo2 img, .photo3 img {
-        width: 400px;
-        height: 600px;
+        width: 294px;
+        height: 450px;
     }
     
     .photo1 figcaption, .photo2 figcaption, .photo3 figcaption  {
-        width: 400px;
-        font-size: 2rem;
+        width: 294px;
+        font-size: 1.97rem;
     }
 }
 
@@ -1009,7 +1009,7 @@ main {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 2400px;
+        grid-template-rows: 75px 2210px;
         grid-template-areas:
           "header header"
           "sidebar main";
@@ -1017,7 +1017,7 @@ main {
 
       main {
         grid-template-columns: 1fr;
-        grid-template-rows: 800px 850px 700px;
+        grid-template-rows: 800px 675px 700px;
         grid-template-areas: 
         "top-banner" 
         "middle-banner" 
@@ -1026,7 +1026,8 @@ main {
 
     .bottom-banner {
         background-image: url('../images/kari-shea-eMzblc6JmXM-unsplash.jpg');
-        padding: 8em;
+        padding: 0;
+        margin: 0 4em;
     }
     
     .bottom-banner article {
