@@ -17,7 +17,7 @@ body {
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 80px 2375px;
+    grid-template-rows: 80px 2430px;
     grid-template-areas: 
     "header" 
     "main";
@@ -122,6 +122,10 @@ nav ul li a {
 }
 
 /* Sidebar */
+.sidebar {
+    display: none;
+}
+
 /* Sidebar for Tablet Screens */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
     body {
@@ -133,6 +137,7 @@ nav ul li a {
     }
 
     .sidebar {
+        display: block;
         grid-area: sidebar;
         background-color: #fbeec1;
     }
@@ -152,6 +157,10 @@ nav ul li a {
         font-size: 1em;
         line-height: 1.25em;
     }
+
+    .showfooter {
+        display: none;
+    }
 }
 
 /* Top Banner */
@@ -159,7 +168,7 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 550px 1500px 320px;
+    grid-template-rows: 550px 1550px 320px;
     grid-template-areas: 
     "top-banner" 
     "middle-banner" 
@@ -274,12 +283,10 @@ main {
     grid-area: middle-banner;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 60px 500px 500px 500px;
+    grid-template-rows: 60px 1500px;
     grid-template-areas: 
     "features" 
-    "photo1" 
-    "photo2" 
-    "photo3";
+    "figure";
 }
 
 #features {
@@ -290,6 +297,18 @@ main {
     font-family: 'Merienda', cursive;
     font-size: 1.75rem;
     color: hotpink;
+    margin-top: 0.5em;
+}
+
+.middle-banner figure {
+    grid-area: figure;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "photo1" 
+    "photo2" 
+    "photo3";
 }
 
 .photo1 {
@@ -354,17 +373,14 @@ main {
 
     .middle-banner {
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 375px 0 0;
+        grid-template-rows: 60px 375px;
         grid-template-areas: 
         "features" 
-        "photo1" "photo2" "photo3";
-    }
-    
-    #features {
-        margin-top: 0.5em;
+        "figure";
     }
     
     .middle-banner figure {
+        grid-area: figure;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 1fr;
@@ -419,20 +435,20 @@ main {
 
     .middle-banner {
         grid-template-columns: 1fr;
-        grid-template-rows: 60px 820px 0 0;
+        grid-template-rows: 60px 820px;
         grid-template-areas: 
         "features" 
-        "photo1" "photo2"
-        "photo3";
+        "figure"
     }
     
     #features {
         grid-column: 1 / -1;
-        margin-top: 0.5em;
         font-size: 2rem;
+        margin-top: 0;
     }
 
     .middle-banner figure {
+        grid-area: figure;
         display: grid;
         grid-template-columns: repeat(10, 1fr);
         grid-template-rows: 1fr 1fr;
@@ -561,7 +577,35 @@ main {
 
 /* Bottom Banner for Tablet Screens */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
+    body {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 110px 1875px;
+        grid-template-areas: 
+        "header header" 
+        "sidebar main";
+    }
 
+    main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px 900px 400px;
+        grid-template-areas: 
+        "top-banner" 
+        "middle-banner" 
+        "bottom-banner";
+    }
+
+    .bottom-banner article {
+        width: 220px;
+        height: 120px;
+    }
+    
+    .bottom-banner h2 {
+        font-size: 1.75rem;
+    }
+    
+    .bottom-banner h3 {
+        font-size: 1.7rem;
+    }
 }
 
 /* Bottom Banner for Tablet Landscape Screens */
@@ -578,4 +622,8 @@ main {
 footer {
     font-family: 'Quicksand', sans-serif;
     margin-top: 1.5em;
+}
+
+.showfooter {
+    margin-top: 0;
 }
