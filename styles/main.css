@@ -674,7 +674,11 @@ main {
 
 /* Bottom Banner for Tablet Landscape Screens */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-
+  body {
+    grid-template-areas:
+      "header header"
+      "sidebar main";
+  }
 }
 
 /* Bottom Banner for Desktop Screens */
