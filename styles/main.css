@@ -154,8 +154,44 @@ nav ul li a {
     display: none;
 }
 
-/* Sidebar for Portrait Tablet Screens */
+/* Sidebar for Tablet Screens */
 @media only screen and (min-width: 768px) and (orientation: portrait) {
+    body {
+        grid-template-columns: 1fr 3fr;
+        grid-template-rows: 110px 2375px;
+        grid-template-areas: 
+        "header header" 
+        "sidebar main";
+    }
+
+    .sidebar {
+        display: block;
+        grid-area: sidebar;
+        background-color: #fbeec1;
+    }
+
+    .sidebar article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        width: 190px;
+    }
+
+    .sidebar article p {
+        margin: 1.5em 1em;
+        font-family: 'Merienda', cursive;
+        font-size: 1em;
+        line-height: 1.25em;
+    }
+
+    .showfooter {
+        display: none;
+    }
+}
+/* Sidebar for Tablet Landscape Screens */
+@media only screen and (min-width: 768px) and (orientation: landscape) {
     body {
         grid-template-columns: 1fr 3fr;
         grid-template-rows: 110px 2375px;
