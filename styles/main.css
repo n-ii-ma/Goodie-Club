@@ -316,7 +316,7 @@ main {
 
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 550px 1500px 320px;
+        grid-template-rows: 550px 900px 320px;
         grid-template-areas: 
         "top-banner" 
         "middle-banner" 
@@ -342,6 +342,43 @@ main {
           "header header"
           "sidebar main";
       }
+
+      main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px 450px 350px;
+        grid-template-areas: 
+        "top-banner" 
+        "middle-banner" 
+        "bottom-banner";
+    }
+    
+    .top-banner {
+        background-image: url('../images/james-sutton-dQ5G0h7sLno-unsplash.jpg');
+        display: grid;
+        grid-template-columns: 2fr 1fr 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+
+    .top-banner article {
+        border-radius: 2px;
+        background-color: #182628;
+        min-height: 175px;
+        width: 275px;
+        opacity: 0.95;
+        align-self: center;
+        justify-self: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+
+    .top-banner h2 {
+        font-size: 2rem;
+        line-height: 1.25em;
+        margin: 0;
+        padding: 0;
+    }
 }
 
 /* Top Banner for Desktop Screens */
@@ -564,6 +601,15 @@ main {
           "header header"
           "sidebar main";
       }
+
+      main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px 450px 350px;
+        grid-template-areas: 
+        "top-banner" 
+        "middle-banner" 
+        "bottom-banner";
+    }
 }
 
 /* Middle Banner for Desktop Screens */
@@ -694,6 +740,15 @@ main {
           "header header"
           "sidebar main";
       }
+
+      main {
+        grid-template-columns: 1fr;
+        grid-template-rows: 550px 450px 350px;
+        grid-template-areas: 
+        "top-banner" 
+        "middle-banner" 
+        "bottom-banner";
+    }
 }
 
 /* Bottom Banner for Desktop Screens */
