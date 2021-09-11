@@ -190,6 +190,7 @@ nav ul li a {
         display: none;
     }
 }
+
 /* Sidebar for Tablet Landscape Screens */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     body {
@@ -686,7 +687,6 @@ main {
 
 /* Bottom Banner for Tablet Landscape Screens */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-<<<<<<< HEAD
     body {
         grid-template-columns: 1fr 4fr;
         grid-template-rows: 75px 2375px;
@@ -694,14 +694,6 @@ main {
           "header header"
           "sidebar main";
       }
-
-=======
-  body {
-    grid-template-areas:
-      "header header"
-      "sidebar main";
-  }
->>>>>>> d5546b6c0acb05b336ab1e061a9601609617c370
 }
 
 /* Bottom Banner for Desktop Screens */
