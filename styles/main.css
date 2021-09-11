@@ -148,7 +148,7 @@ nav ul li a {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 1550px;
+        grid-template-rows: 75px 2400px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -260,7 +260,7 @@ nav ul li a {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 1550px;
+        grid-template-rows: 75px 2400px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -450,7 +450,7 @@ main {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 1550px;
+        grid-template-rows: 75px 2400px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -458,7 +458,7 @@ main {
 
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 800px 500px 450px;
+        grid-template-rows: 800px 850px 700px;
         grid-template-areas: 
         "top-banner" 
         "middle-banner" 
@@ -770,7 +770,7 @@ main {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 1550px;
+        grid-template-rows: 75px 2400px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -778,7 +778,7 @@ main {
 
     main {
         grid-template-columns: 1fr;
-        grid-template-rows: 800px 850px 450px;
+        grid-template-rows: 800px 850px 700px;
         grid-template-areas: 
         "top-banner" 
         "middle-banner" 
@@ -874,7 +874,7 @@ main {
 
 .bottom-banner h3 a {
     text-decoration: none;
-    color: black;
+    color: chocolate;
 }
 
 /* Bottom Banner for Landscape Mobile Screens */
@@ -989,7 +989,7 @@ main {
 @media only screen and (min-width: 1200px) {
     body {
         grid-template-columns: 300px 4fr;
-        grid-template-rows: 75px 1550px;
+        grid-template-rows: 75px 2400px;
         grid-template-areas:
           "header header"
           "sidebar main";
@@ -997,11 +997,30 @@ main {
 
       main {
         grid-template-columns: 1fr;
-        grid-template-rows: 800px 850px 450px;
+        grid-template-rows: 800px 850px 700px;
         grid-template-areas: 
         "top-banner" 
         "middle-banner" 
         "bottom-banner";
+    }
+
+    .bottom-banner {
+        background-image: url('../images/kari-shea-eMzblc6JmXM-unsplash.jpg');
+        padding: 8em;
+    }
+    
+    .bottom-banner article {
+        width: 370px;
+        height: 270px;
+    }
+
+    .bottom-banner h2 {
+        font-size: 3rem;
+    }
+    
+    .bottom-banner h3 {
+        font-size: 2.75rem;
+        width: 150px;
     }
 }
 
