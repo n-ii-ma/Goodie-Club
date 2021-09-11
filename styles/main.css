@@ -881,10 +881,10 @@ main {
     font-size: 1.4rem;
     background-color: #fdf1d3;
     width: 75px;
+    height: 25px;
 }
 
 .bottom-banner h3 a {
-    text-decoration: none;
     color: chocolate;
 }
 
@@ -922,6 +922,7 @@ main {
     
     .bottom-banner h3 {
         font-size: 1.6rem;
+        height: 28px;
     }
 }
 
@@ -955,6 +956,7 @@ main {
     
     .bottom-banner h3 {
         font-size: 1.7rem;
+        height: 28px;
     }
 }
 
@@ -993,6 +995,7 @@ main {
     .bottom-banner h3 {
         font-size: 1.85rem;
         width: 90px;
+        height: 30px;
     }
 }
 
@@ -1033,6 +1036,7 @@ main {
     .bottom-banner h3 {
         font-size: 2.75rem;
         width: 150px;
+        height: 48px;
     }
 }
 
