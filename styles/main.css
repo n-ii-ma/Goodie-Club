@@ -115,7 +115,7 @@ nav ul li a {
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     body {
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 110px 2375px;
+        grid-template-rows: 75px 2375px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -182,7 +182,7 @@ nav ul li a {
     .sidebar article p {
         margin: 1.5em 1em;
         font-family: 'Merienda', cursive;
-        font-size: 1em;
+        font-size: 1rem;
         line-height: 1.25em;
     }
 
@@ -194,7 +194,7 @@ nav ul li a {
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     body {
         grid-template-columns: 1fr 3fr;
-        grid-template-rows: 110px 2375px;
+        grid-template-rows: 75px 2375px;
         grid-template-areas: 
         "header header" 
         "sidebar main";
@@ -216,9 +216,9 @@ nav ul li a {
     }
 
     .sidebar article p {
-        margin: 1.5em 1em;
+        margin: 0.84em 0.8em;
         font-family: 'Merienda', cursive;
-        font-size: 1em;
+        font-size: 0.98rem;
         line-height: 1.25em;
     }
 
@@ -334,7 +334,13 @@ main {
 
 /* Top Banner for Tablet Landscape Screens */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-
+    body {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 75px 2375px;
+        grid-template-areas:
+          "header header"
+          "sidebar main";
+      }
 }
 
 /* Top Banner for Desktop Screens */
@@ -550,7 +556,13 @@ main {
 
 /* Middle Banner for Tablet Landscape Screens */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
-
+    body {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 75px 2375px;
+        grid-template-areas:
+          "header header"
+          "sidebar main";
+      }
 }
 
 /* Middle Banner for Desktop Screens */
@@ -674,6 +686,13 @@ main {
 
 /* Bottom Banner for Tablet Landscape Screens */
 @media only screen and (min-width: 768px) and (orientation: landscape) {
+    body {
+        grid-template-columns: 1fr 4fr;
+        grid-template-rows: 75px 2375px;
+        grid-template-areas:
+          "header header"
+          "sidebar main";
+      }
 
 }
 
