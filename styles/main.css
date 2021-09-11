@@ -220,11 +220,12 @@ nav ul li a {
 
     .sidebar article {
         width: 190px;
-        height: 100vh;
+        height: calc(100vh - 110px);
         display: flex;
         flex-direction: column;
         align-items: center;
         position: fixed;
+        overflow-y: scroll;
     }
 
     .sidebar article p {
@@ -232,10 +233,6 @@ nav ul li a {
         font-family: 'Merienda', cursive;
         font-size: 1rem;
         line-height: 1.25em;
-    }
-
-    .showfooter {
-        display: none;
     }
 }
 
@@ -257,11 +254,12 @@ nav ul li a {
 
     .sidebar article {
         width: 200px;
-        height: 100vh;
+        height: calc(100vh - 75px);
         display: flex;
         flex-direction: column;
         align-items: center;
         position: fixed;
+        overflow-y: scroll;
     }
 
     .sidebar article p {
@@ -269,10 +267,6 @@ nav ul li a {
         font-family: 'Merienda', cursive;
         font-size: 0.98rem;
         line-height: 1.25em;
-    }
-
-    .showfooter {
-        display: none;
     }
 }
 
@@ -294,11 +288,12 @@ nav ul li a {
 
     .sidebar article {
         width: 300px;
-        height: 100vh;
+        height: calc(100vh - 60px);
         display: flex;
         flex-direction: column;
         align-items: center;
         position: fixed;
+        overflow: scroll;
     }
 
     .sidebar article p {
@@ -306,10 +301,6 @@ nav ul li a {
         font-family: 'Merienda', cursive;
         font-size: 1rem;
         line-height: 1.5em;
-    }
-
-    .showfooter {
-        display: none;
     }
 }
 
@@ -1048,14 +1039,11 @@ main {
 /* Footer */
 footer {
     font-family: 'Quicksand', sans-serif;
-    margin-top: 1.5em;
-}
-
-.showfooter {
     margin-top: 0;
     width: 100%;
     position: fixed;
     bottom: 0;
     background-color: #fce;
     opacity: 0.9;
+
 }
