@@ -873,19 +873,15 @@ main {
 .bottom-banner h2 {
     font-family: 'Merienda', cursive;
     font-size: 1.4rem;
-    margin-bottom: 1em;
+    margin-bottom: 0.6em;
 }
 
-.bottom-banner h3 {
+.bottom-banner button {
     font-family: 'Caveat', cursive;
     font-size: 1.4rem;
     background-color: #fdf1d3;
-    width: 75px;
-    height: 25px;
-}
-
-.bottom-banner h3 a {
     color: chocolate;
+    padding-right: 0.4em;
 }
 
 /* Bottom Banner for Landscape Mobile Screens */
@@ -920,9 +916,8 @@ main {
         font-size: 1.75rem;
     }
     
-    .bottom-banner h3 {
+    .bottom-banner button {
         font-size: 1.6rem;
-        height: 28px;
     }
 }
 
@@ -954,9 +949,8 @@ main {
         font-size: 1.75rem;
     }
     
-    .bottom-banner h3 {
+    .bottom-banner button {
         font-size: 1.7rem;
-        height: 28px;
     }
 }
 
@@ -992,10 +986,8 @@ main {
         font-size: 2rem;
     }
     
-    .bottom-banner h3 {
+    .bottom-banner button {
         font-size: 1.85rem;
-        width: 90px;
-        height: 30px;
     }
 }
 
@@ -1033,10 +1025,9 @@ main {
         font-size: 3rem;
     }
     
-    .bottom-banner h3 {
+    .bottom-banner button {
         font-size: 2.75rem;
-        width: 150px;
-        height: 48px;
+        margin-top: 0.5em;
     }
 }
 
@@ -1049,5 +1040,4 @@ footer {
     bottom: 0;
     background-color: #fce;
     opacity: 0.9;
-
 }
