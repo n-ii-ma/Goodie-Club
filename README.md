@@ -1,4 +1,4 @@
-# Goodie-Club
+# Goodie Club
 
 A Codecademy Project
 
