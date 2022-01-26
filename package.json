@@ -1,0 +1,14 @@
+{
+  "name": "goodie-club",
+  "version": "1.0.0",
+  "description": "The Cutest Cat Club in the World",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index"
+  },
+  "author": "Nima",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2"
+  }
+}
